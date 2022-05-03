@@ -29,7 +29,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     }
 
     public SQLiteHelper(@Nullable Context context) {
-        super(context, "user.db", null, 1);
+        super(context, "190705B.db", null, 1);
     }
 
     @Override
