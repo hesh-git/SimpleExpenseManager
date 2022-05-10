@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.3" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="29"
+            column="13"
+            startOffset="1169"
+            endLine="29"
+            endColumn="45"
+            endOffset="1201"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="37"
+            column="6"
+            startOffset="1595"
+            endLine="37"
+            endColumn="14"
+            endOffset="1603"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="54"
+            column="6"
+            startOffset="2166"
+            endLine="54"
+            endColumn="14"
+            endOffset="2174"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="71"
+            column="6"
+            startOffset="2755"
+            endLine="71"
+            endColumn="14"
+            endOffset="2763"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="88"
+            column="6"
+            startOffset="3351"
+            endLine="88"
+            endColumn="14"
+            endOffset="3359"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `TableLayout` layout or its `GridLayout` parent is possibly unnecessary">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_expense_logs.xml"
+            line="28"
+            column="6"
+            startOffset="1266"
+            endLine="28"
+            endColumn="17"
+            endOffset="1277"/>
+    </incident>
+
+    <incident
+        id="ObsoleteLayoutParam"
+        severity="warning"
+        message="Invalid layout param in a `GridLayout`: `layout_weight`">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_expense_logs.xml"
+            line="32"
+            column="9"
+            startOffset="1416"
+            endLine="32"
+            endColumn="34"
+            endOffset="1441"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `TableRow` layout or its `TableLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_expense_logs.xml"
+            line="35"
+            column="10"
+            startOffset="1491"
+            endLine="35"
+            endColumn="18"
+            endOffset="1499"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_manage_expenses.xml"
+            line="84"
+            column="6"
+            startOffset="3270"
+            endLine="84"
+            endColumn="14"
+            endOffset="3278"/>
+    </incident>
+
+    <incident
+        id="ButtonCase"
+        severity="warning"
+        message="The standard Android way to capitalize Ok is &quot;OK&quot; (tip: use `@android:string/ok` instead)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="33"
+            column="27"
+            startOffset="1582"
+            endLine="33"
+            endColumn="29"
+            endOffset="1584"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="&quot;Ok&quot; is usually capitalized as &quot;OK&quot;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with &quot;OK&quot;"
+                oldString="Ok"
+                replacement="OK"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="33"
+            column="27"
+            startOffset="1582"
+            endLine="33"
+            endColumn="27"
+            endOffset="1584"/>
+    </incident>
+
+    <incident
+        id="Recycle"
+        severity="warning"
+        message="This `Cursor` should be freed up after use with `#close()`">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/data/impl/SQLiteAccountDAO.java"
+            line="64"
+            column="28"
+            startOffset="2445"
+            endLine="64"
+            endColumn="36"
+            endOffset="2453"/>
+    </incident>
+
+    <incident
+        id="SimpleDateFormat"
+        severity="warning"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/data/impl/SQLiteTransactionDAO.java"
+            line="32"
+            column="38"
+            startOffset="1141"
+            endLine="32"
+            endColumn="72"
+            endOffset="1175"/>
+    </incident>
+
+    <incident
+        id="SimpleDateFormat"
+        severity="warning"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/data/impl/SQLiteTransactionDAO.java"
+            line="60"
+            column="43"
+            startOffset="2265"
+            endLine="60"
+            endColumn="77"
+            endOffset="2299"/>
+    </incident>
+
+    <incident
+        id="NonConstantResourceId"
+        severity="warning"
+        message="Resource IDs will be non-final by default in Android Gradle Plugin version 8.0, avoid using them in switch case statements">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/AddAccountFragment.java"
+            line="70"
+            column="18"
+            startOffset="2706"
+            endLine="70"
+            endColumn="34"
+            endOffset="2722"/>
+    </incident>
+
+    <incident
+        id="SimpleDateFormat"
+        severity="warning"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/ExpenseLogsFragment.java"
+            line="75"
+            column="36"
+            startOffset="3020"
+            endLine="75"
+            endColumn="115"
+            endOffset="3099"/>
+    </incident>
+
+    <incident
+        id="NonConstantResourceId"
+        severity="warning"
+        message="Resource IDs will be non-final by default in Android Gradle Plugin version 8.0, avoid using them in switch case statements">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/ManageExpensesFragment.java"
+            line="89"
+            column="18"
+            startOffset="3660"
+            endLine="89"
+            endColumn="36"
+            endOffset="3678"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/ManageExpensesFragment.java"
+            line="107"
+            column="58"
+            startOffset="4592"
+            endLine="107"
+            endColumn="69"
+            endOffset="4603"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.2">
+        <fix-replace
+            description="Change to 4.13.2"
+            family="Update versions"
+            oldString="4.12"
+            replacement="4.13.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="40"
+            column="24"
+            startOffset="1288"
+            endLine="40"
+            endColumn="42"
+            endOffset="1306"/>
+    </incident>
+
+</incidents>
