@@ -29,7 +29,7 @@ public class SQLiteAccountDAO implements AccountDAO {
         Cursor cursor = db.rawQuery("SELECT " + SQLiteHelper.ACCOUNT_NO + " FROM "+ SQLiteHelper.ACCOUNT_TABLE, null);
 
         for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            String account_num = cursor.getString(cursor.getColumnIndex(SQLiteHelper.ACCOUNT_NO));
+            String account_num = cursor.getString(cursor.getColumnIndexOrThrow(SQLiteHelper.ACCOUNT_NO));
             accountNoList.add(account_num);
         }
         cursor.close();

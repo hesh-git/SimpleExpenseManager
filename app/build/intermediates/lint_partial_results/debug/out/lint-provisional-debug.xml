@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.3" type="conditional_incidents">
+
+    <incident
+        id="IntentFilterExportedReceiver"
+        severity="warning"
+        message="As of Android 12, `android:exported` must be set; use `true` to make the activity \&#xA;available to other apps, and `false` otherwise. For launcher activities, this should be set to `true`.">
+        <fix-attribute
+            description="Set exported=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="exported"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="27"
+            column="10"
+            startOffset="1102"
+            endLine="27"
+            endColumn="18"
+            endOffset="1110"/>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="37"
+            column="6"
+            startOffset="1595"
+            endLine="37"
+            endColumn="14"
+            endOffset="1603"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="54"
+            column="6"
+            startOffset="2166"
+            endLine="54"
+            endColumn="14"
+            endOffset="2174"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="71"
+            column="6"
+            startOffset="2755"
+            endLine="71"
+            endColumn="14"
+            endOffset="2763"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_add_account.xml"
+            line="88"
+            column="6"
+            startOffset="3351"
+            endLine="88"
+            endColumn="14"
+            endOffset="3359"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_manage_expenses.xml"
+            line="108"
+            column="9"
+            startOffset="4102"
+            endLine="108"
+            endColumn="41"
+            endOffset="4134"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="19"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Attribute `datePickerMode` is only used in API level 21 and higher (current min is %1$d)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_manage_expenses.xml"
+            line="84"
+            column="6"
+            startOffset="3270"
+            endLine="84"
+            endColumn="14"
+            endOffset="3278"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ExpiredTargetSdkVersion"
+        severity="fatal"
+        message="Google Play requires that apps target API level 30 or higher.&#xA;">
+        <fix-replace
+            description="Update targetSdkVersion to 32"
+            oldString="26"
+            replacement="32"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="26"
+            column="9"
+            startOffset="920"
+            endLine="26"
+            endColumn="28"
+            endOffset="939"/>
+    </incident>
+
+</incidents>
