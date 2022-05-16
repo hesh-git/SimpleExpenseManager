@@ -59,10 +59,10 @@ public class SQLiteTransactionDAO implements TransactionDAO {
         try{
             SimpleDateFormat formatter =  new SimpleDateFormat("yyyy-MM-dd");
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-                String acc_no = cursor.getString(cursor.getColumnIndex(SQLiteHelper.ACC_NO));
-                String strDate = cursor.getString(cursor.getColumnIndex(SQLiteHelper.TRANS_DATE));
-                ExpenseType expenseType = ExpenseType.valueOf(cursor.getString(cursor.getColumnIndex(SQLiteHelper.EXPENSE_TYPE)));
-                double amount = cursor.getDouble(cursor.getColumnIndex(SQLiteHelper.AMOUNT));
+                String acc_no = cursor.getString(cursor.getColumnIndexOrThrow(SQLiteHelper.ACC_NO));
+                String strDate = cursor.getString(cursor.getColumnIndexOrThrow(SQLiteHelper.TRANS_DATE));
+                ExpenseType expenseType = ExpenseType.valueOf(cursor.getString(cursor.getColumnIndexOrThrow(SQLiteHelper.EXPENSE_TYPE)));
+                double amount = cursor.getDouble(cursor.getColumnIndexOrThrow(SQLiteHelper.AMOUNT));
                 transactionList.add(new Transaction(formatter.parse(strDate),acc_no,expenseType,amount));
             }
         }

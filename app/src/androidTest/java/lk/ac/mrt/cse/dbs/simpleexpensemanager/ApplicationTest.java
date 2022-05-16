@@ -16,14 +16,53 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import android.app.Application;
+import android.content.Context;
 import android.test.ApplicationTestCase;
+import androidx.test.core.app.ApplicationProvider;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.util.Date;
+
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
  */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+public class ApplicationTest {
+    private static ExpenseManager expenseManager;
+
+    @BeforeClass
+    public static void testAddAccount(){
+        Context context = ApplicationProvider.getApplicationContext();
+        expenseManager = new PersistentExpenseManager(context);
+        expenseManager.addAccount("200E","BOC","Theshan", 50000);
     }
+
+    @Test
+    public void checkAddedAccount(){
+//        try {
+//            assertTrue(expenseManager.getAccountsDAO().getAccount("200E").getAccountNo().equals("200E"));
+//        }catch(InvalidAccountException e){
+//            fail();
+//        }
+        assertTrue(expenseManager.getAccountNumbersList().contains("200E"));
+    }
+
+    @Test
+    public void checkLoggedTransaction(){
+       int previousTransactionListSize = expenseManager.getTransactionLogs().size();
+       expenseManager.getTransactionsDAO().logTransaction(new Date(),"200E", ExpenseType.EXPENSE, 2000);
+       int lastTransactionListSize = expenseManager.getTransactionLogs().size();
+
+       assertTrue(lastTransactionListSize - previousTransactionListSize == 1 );
+    }
+
 }
